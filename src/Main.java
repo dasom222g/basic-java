@@ -72,6 +72,14 @@ public class Main {
 
         System.out.println("names2" + names);
 
+        // set: List와 비슷하지만 중복 값을 허용하지 않음
+        Set<Integer> numbers = new HashSet<>();
+        numbers.add(1);
+        numbers.add(1);
+        numbers.add(2);
+
+        System.out.println(numbers); // [1, 2]
+
         /*
         * map: 객체
         * */
@@ -82,7 +90,18 @@ public class Main {
         student1.put("age", 20);
         student1.put("isFemale", true);
 
-        System.out.println("student1" + student1);
+        System.out.println("student1 추가 후" + student1);
+
+        // 데이터 불러오기
+        System.out.println("name: " + student1.get("name"));
+
+        // 데이터 변경
+        student1.put("name", "후츠릿");
+        System.out.println("student1 변경 후" + student1);
+
+        // 데이터 삭제
+        student1.remove("isFemale");
+        System.out.println("student1 삭제 후" + student1);
 
 
     }
