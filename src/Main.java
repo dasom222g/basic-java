@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -32,6 +32,7 @@ public class Main {
         */
 
         // 사용자가 입력한 점수가 80점 이상이면 "A등급", 70점 이상이면 "B등급", 그외는 "C등급" 출력
+        /*
         System.out.println("점수를 입력하세요: ");
         int score = scanner.nextInt();
         String level = "C";
@@ -44,6 +45,45 @@ public class Main {
         System.out.println(level + "등급");
 
         scanner.close();
+         */
+
+        // java에서의 배열은 {}로 감싸주고 등록되는 모든 값은 자료형이 동일해야 함
+
+        /*
+         * 자바에서 Array와 List의 차이점
+         * Array: 크기 고정, 값 추가 불가
+         * List: 크기 가변, 값 추가 가능
+         * */
+
+
+        // 배열(Array)
+        String[] colors = {"red", "green", "blue"};
+        System.out.println("colors address: " + colors); // 배열의 주소 출력
+        System.out.println("colors: " + Arrays.toString(colors)); // 배열값 출력
+
+        // 리스트(List)
+        List<String> names = new ArrayList<>();
+        // 가변형이기 때문에 names인스턴스에서는 add, remove같은 데이터 변경 가능한 메서드 존재
+        names.add("후츠릿");
+        names.add("김다솜");
+        System.out.println("names1" + names);
+
+        names.remove("후츠릿");
+
+        System.out.println("names2" + names);
+
+        /*
+        * map: 객체
+        * */
+
+        // value에 다양한 데이터타입으로 구성되어야 하는경우엔 "Object"로 구성
+        Map<String, Object> student1 = new HashMap<>();
+        student1.put("name", "chutzrit");
+        student1.put("age", 20);
+        student1.put("isFemale", true);
+
+        System.out.println("student1" + student1);
+
 
     }
 
