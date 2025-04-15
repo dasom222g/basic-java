@@ -85,6 +85,7 @@ public class Main {
         * */
 
         // value에 다양한 데이터타입으로 구성되어야 하는경우엔 "Object"로 구성
+        // Generic:<String, Object> 부분으로 파라미터에 어떤 자료형의 인자값이 전달되어야 하는지 호출시점에 지정하는 것
         Map<String, Object> student1 = new HashMap<>();
         student1.put("name", "chutzrit");
         student1.put("age", 20);
