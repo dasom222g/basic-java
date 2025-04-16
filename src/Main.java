@@ -1,3 +1,6 @@
+import user.User;
+import user.UserHobby;
+
 import java.util.*;
 
 public class Main {
@@ -145,7 +148,8 @@ public class Main {
         myCar.color = "빨강"; // 인스턴스의 멤버변수 값 변경
         myCar.drive(); // 인스턴스의 메소드 호출
 
-        User chuztrit = new User("후츠릿", 20);
+        User chuztrit = new User("후츠릿", 20, "chutzrit", "aaa#gmail.com");
+        User noUser = new User();
 
         chuztrit.setName("김다솜");
         String userName = chuztrit.getName();
@@ -153,6 +157,16 @@ public class Main {
 
         System.out.println("userName: " + userName);
         System.out.println("userAge: " + userAge);
+
+        System.out.println("noUser Name =>" +  noUser.getName());
+        System.out.println("noUser age =>" +  noUser.age);
+
+        List<String> hobbyList = new ArrayList<>(Arrays.asList("reading", "music", "drawing"));
+        UserHobby childUser = new UserHobby("아이유", 30, "iu333", "bbb@gmail.com", hobbyList);
+
+        System.out.println("childUser hobby: " + childUser.getHobbyList());
+        System.out.println("childUser name: " + childUser.getName());
+
 
 
     }
