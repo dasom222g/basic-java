@@ -104,6 +104,36 @@ public class Main {
         student1.remove("isFemale");
         System.out.println("student1 삭제 후" + student1);
 
+        // 미션1: 정수 배열을 받아 총 합을 구하는 메서드
+        // List<Integer> numberList = new ArrayList<>();
+        int[] numberList = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        int sum = 0;
+        for (int number: numberList) {
+            // number: 배열의 각 요소
+            sum += number;
+        }
+        System.out.println("sum: " + sum);
+
+
+
+
+        // 미션2: Map을 사용해 여러명의 사용자 정보를 저장하고 줄력(이름, 나이, 이메일)
+        List<Map<String, Object>> userInfoList = new ArrayList<>();
+
+        // 각 사용자 정보
+        Map<String, Object> user1 = Map.of("name", "후츠릿", "age", 30, "email", "aaa@gmail.com");
+        Map<String, Object> user2 = Map.of("name", "김다솜", "age", 25, "email", "bbb@gmail.com");
+        Map<String, Object> user3 = Map.of("name", "이유진", "age", 19, "email", "ccc@gmail.com");
+
+        userInfoList.add(user1);
+        userInfoList.add(user2);
+        userInfoList.add(user3);
+
+        System.out.println("userInfoList" + userInfoList);
+
+        System.out.println("userInfoList" + userInfoList.get(0)); // List형식에서 요소를 꺼내오는 방법
+
 
     }
 
