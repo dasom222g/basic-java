@@ -108,15 +108,14 @@ public class Main {
         // List<Integer> numberList = new ArrayList<>();
         int[] numberList = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
+        System.out.println("numberList[0]" + numberList[0]); // 배열에서 요소를 꺼내오는 법
+
         int sum = 0;
         for (int number: numberList) {
             // number: 배열의 각 요소
             sum += number;
         }
         System.out.println("sum: " + sum);
-
-
-
 
         // 미션2: Map을 사용해 여러명의 사용자 정보를 저장하고 줄력(이름, 나이, 이메일)
         List<Map<String, Object>> userInfoList = new ArrayList<>();
@@ -132,7 +131,11 @@ public class Main {
 
         System.out.println("userInfoList" + userInfoList);
 
-        System.out.println("userInfoList" + userInfoList.get(0)); // List형식에서 요소를 꺼내오는 방법
+        System.out.println("userInfoList 첫번째 요소" + userInfoList.get(0)); // List형식에서 요소를 꺼내오는 방법
+
+        for(Map<String, Object> user: userInfoList) {
+            System.out.println("userName: " + user.get("name"));
+        }
 
 
     }
