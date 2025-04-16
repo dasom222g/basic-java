@@ -137,7 +137,23 @@ public class Main {
             System.out.println("userName: " + user.get("name"));
         }
 
+        // --------------------------------------------------------------
+
+        // 클래스와 객체
+        // 동일한 품질의 데이터를 생성하기 위해 클래스를 정의하고 클래스에서 데이터의 흐름을 강제함
+        Car myCar = new Car(); // 인스턴스 생성
+        myCar.color = "빨강"; // 인스턴스의 멤버변수 값 변경
+        myCar.drive(); // 인스턴스의 메소드 호출
+
+        User chuztrit = new User("후츠릿", 20);
+
+        chuztrit.setName("김다솜");
+        String userName = chuztrit.getName();
+        int userAge = chuztrit.age;
+
+        System.out.println("userName: " + userName);
+        System.out.println("userAge: " + userAge);
+
 
     }
-
 }
