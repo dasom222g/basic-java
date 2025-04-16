@@ -167,7 +167,15 @@ public class Main {
         System.out.println("childUser hobby: " + childUser.getHobbyList());
         System.out.println("childUser name: " + childUser.getName());
 
-
+    /*
+    * 객체지향
+    * - 대단위 프로젝트에서 동일한 품질의 객체(인스턴스)를 대량 생성하기위한 시스템적인 툴
+    * - 웹에서의 인스턴스: 개별적인 게시글(강제된 개별적 게시글 데이터 형식)
+    * - 클래스: 인스턴스 생성하는 시스템적인 툴
+    * - 인터페이스: 클래스의 형식을 강제하는 설계서로서 정의된 메소드가 실제 클래스에 구현되어있지 않으면 에러발생
+    * - extends: 기존 클래스 상속받아 새로운 클래스에 확장
+    * - override: 기존 클래스의 특정 메서드 덮어쓰기
+    * */
 
     }
 }
