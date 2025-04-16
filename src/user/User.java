@@ -1,6 +1,18 @@
 package user;
 
-public class User {
+// User클래스의 인터페이스 (전용 틀)
+interface IUser {
+    // setter함수는 일반적으로 포함하지 않음 (인터페이스는 상태 변경보다는 행위(behavior) 정의에 중점)
+    // 필수 함수만 정의
+    String getName();
+
+    String getUserId();
+
+    String getEmail();
+
+}
+
+public class User implements IUser  {
     private String name;
     public int age;
 
